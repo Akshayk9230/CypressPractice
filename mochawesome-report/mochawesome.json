@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-05-29T13:05:47.025Z",
-    "end": "2024-05-29T13:05:52.949Z",
-    "duration": 5924,
+    "failures": 1,
+    "start": "2024-05-30T14:28:05.635Z",
+    "end": "2024-05-30T14:28:06.055Z",
+    "duration": 420,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,61 +18,46 @@
   },
   "results": [
     {
-      "uuid": "f0a26212-d02c-4f12-a013-f39189b7d158",
+      "uuid": "6c609927-492b-41eb-876a-12115447cb84",
       "title": "",
       "fullFile": "cypress\\e2e\\practice.cy.js",
       "file": "cypress\\e2e\\practice.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "uuid": "e599c850-674a-4b80-a427-77a579a874bf",
-          "title": "this is a prctice test",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "perform all web automation actions on demo page",
-              "fullTitle": "this is a prctice test perform all web automation actions on demo page",
-              "timedOut": null,
-              "duration": 4371,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.xpath('//*[@value=\"radio1\"]').click();",
-              "err": {},
-              "uuid": "0c5e9a76-ef32-4932-9731-48677adbe70e",
-              "parentUUID": "e599c850-674a-4b80-a427-77a579a874bf",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "0c5e9a76-ef32-4932-9731-48677adbe70e"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 4371,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 305,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./node_modules/ci-info/index.js (webpack://cypresspractice/./node_modules/ci-info/index.js:5:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/is-ci/index.js (webpack://cypresspractice/./node_modules/is-ci/index.js:3:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/lib/util.js (webpack://cypresspractice/./node_modules/cypress/lib/util.js:12:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/index.js (webpack://cypresspractice/./node_modules/cypress/index.js:6:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at eval (webpack://cypresspractice/./cypress/e2e/practice.cy.js:1:16)\n    at eval (http://localhost:51688/__cypress/tests?p=cypress\\e2e\\practice.cy.js:152729:3)",
+            "diff": null
+          },
+          "uuid": "38101367-f7f3-46aa-877a-2824296997b2",
+          "parentUUID": "6c609927-492b-41eb-876a-12115447cb84",
+          "isHook": false,
+          "skipped": false
         }
       ],
+      "suites": [],
       "passes": [],
-      "failures": [],
+      "failures": [
+        "38101367-f7f3-46aa-877a-2824296997b2"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 305,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 2000
     }
   ],
