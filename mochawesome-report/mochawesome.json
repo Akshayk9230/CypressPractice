@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 1,
-    "passes": 0,
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-05-30T14:32:01.277Z",
-    "end": "2024-05-30T14:32:01.836Z",
-    "duration": 559,
-    "testsRegistered": 1,
-    "passPercent": 0,
+    "failures": 0,
+    "start": "2024-05-30T14:42:15.582Z",
+    "end": "2024-05-30T14:42:22.194Z",
+    "duration": 6612,
+    "testsRegistered": 2,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,46 +18,80 @@
   },
   "results": [
     {
-      "uuid": "e21b0207-1a22-4ebb-80c3-d34daa2d20d5",
+      "uuid": "0ac3a5d3-6c09-4d00-a374-550c295317d9",
       "title": "",
       "fullFile": "cypress\\e2e\\practice.cy.js",
       "file": "cypress\\e2e\\practice.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
+      "tests": [],
+      "suites": [
         {
-          "title": "An uncaught error was detected outside of a test",
-          "fullTitle": "An uncaught error was detected outside of a test",
-          "timedOut": null,
-          "duration": 500,
-          "state": "failed",
-          "speed": null,
-          "pass": false,
-          "fail": true,
-          "pending": false,
-          "context": null,
-          "code": "throw err;",
-          "err": {
-            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
-            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./node_modules/ci-info/index.js (webpack://cypresspractice/./node_modules/ci-info/index.js:5:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/is-ci/index.js (webpack://cypresspractice/./node_modules/is-ci/index.js:3:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/lib/util.js (webpack://cypresspractice/./node_modules/cypress/lib/util.js:12:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/index.js (webpack://cypresspractice/./node_modules/cypress/index.js:6:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at eval (webpack://cypresspractice/./cypress/e2e/practice.cy.js:1:16)\n    at eval (http://localhost:51799/__cypress/tests?p=cypress\\e2e\\practice.cy.js:152729:3)",
-            "diff": null
-          },
-          "uuid": "aa931c9c-13b3-4a1b-9d85-791755a45c1b",
-          "parentUUID": "e21b0207-1a22-4ebb-80c3-d34daa2d20d5",
-          "isHook": false,
-          "skipped": false
+          "uuid": "e8bfad16-8502-4bc2-967e-c77434786ccc",
+          "title": "This is a Practice Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Title of the webPage",
+              "fullTitle": "This is a Practice Test Suite Validate Title of the webPage",
+              "timedOut": null,
+              "duration": 4024,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.title().should('eq', 'Practice Page');",
+              "err": {},
+              "uuid": "0ea530ff-f258-4574-815d-be8b784326d2",
+              "parentUUID": "e8bfad16-8502-4bc2-967e-c77434786ccc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To Click on radio buttons",
+              "fullTitle": "This is a Practice Test Suite To Click on radio buttons",
+              "timedOut": null,
+              "duration": 671,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.xpath('//*[@value=\"radio1\"]').click();",
+              "err": {},
+              "uuid": "3fb94a52-dfce-42a5-8beb-0ec6f832fdb5",
+              "parentUUID": "e8bfad16-8502-4bc2-967e-c77434786ccc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ea530ff-f258-4574-815d-be8b784326d2",
+            "3fb94a52-dfce-42a5-8beb-0ec6f832fdb5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4695,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
         }
       ],
-      "suites": [],
       "passes": [],
-      "failures": [
-        "aa931c9c-13b3-4a1b-9d85-791755a45c1b"
-      ],
+      "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 500,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],
