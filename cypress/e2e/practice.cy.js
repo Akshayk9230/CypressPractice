@@ -1,4 +1,5 @@
-
+/// <reference types="Cypress" />
+/// <reference types="cypress-xpath" />
 
 describe('This is a Practice Test Suite', () => {
   it('Validate Title of the webPage', () => {
