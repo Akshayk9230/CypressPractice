@@ -1,4 +1,4 @@
-const cypress = require("cypress")
+
 
 describe('This is a Practice Test Suite', () => {
   it('Validate Title of the webPage', () => {

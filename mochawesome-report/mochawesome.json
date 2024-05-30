@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-05-30T14:28:05.635Z",
-    "end": "2024-05-30T14:28:06.055Z",
-    "duration": 420,
+    "start": "2024-05-30T14:32:01.277Z",
+    "end": "2024-05-30T14:32:01.836Z",
+    "duration": 559,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6c609927-492b-41eb-876a-12115447cb84",
+      "uuid": "e21b0207-1a22-4ebb-80c3-d34daa2d20d5",
       "title": "",
       "fullFile": "cypress\\e2e\\practice.cy.js",
       "file": "cypress\\e2e\\practice.cy.js",
@@ -29,7 +29,7 @@
           "title": "An uncaught error was detected outside of a test",
           "fullTitle": "An uncaught error was detected outside of a test",
           "timedOut": null,
-          "duration": 305,
+          "duration": 500,
           "state": "failed",
           "speed": null,
           "pass": false,
@@ -39,11 +39,11 @@
           "code": "throw err;",
           "err": {
             "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
-            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./node_modules/ci-info/index.js (webpack://cypresspractice/./node_modules/ci-info/index.js:5:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/is-ci/index.js (webpack://cypresspractice/./node_modules/is-ci/index.js:3:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/lib/util.js (webpack://cypresspractice/./node_modules/cypress/lib/util.js:12:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/index.js (webpack://cypresspractice/./node_modules/cypress/index.js:6:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at eval (webpack://cypresspractice/./cypress/e2e/practice.cy.js:1:16)\n    at eval (http://localhost:51688/__cypress/tests?p=cypress\\e2e\\practice.cy.js:152729:3)",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./node_modules/ci-info/index.js (webpack://cypresspractice/./node_modules/ci-info/index.js:5:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/is-ci/index.js (webpack://cypresspractice/./node_modules/is-ci/index.js:3:0)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/lib/util.js (webpack://cypresspractice/./node_modules/cypress/lib/util.js:12:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/index.js (webpack://cypresspractice/./node_modules/cypress/index.js:6:13)\n    at __webpack_require__ (webpack://cypresspractice/webpack/bootstrap:19:0)\n    at eval (webpack://cypresspractice/./cypress/e2e/practice.cy.js:1:16)\n    at eval (http://localhost:51799/__cypress/tests?p=cypress\\e2e\\practice.cy.js:152729:3)",
             "diff": null
           },
-          "uuid": "38101367-f7f3-46aa-877a-2824296997b2",
-          "parentUUID": "6c609927-492b-41eb-876a-12115447cb84",
+          "uuid": "aa931c9c-13b3-4a1b-9d85-791755a45c1b",
+          "parentUUID": "e21b0207-1a22-4ebb-80c3-d34daa2d20d5",
           "isHook": false,
           "skipped": false
         }
@@ -51,11 +51,11 @@
       "suites": [],
       "passes": [],
       "failures": [
-        "38101367-f7f3-46aa-877a-2824296997b2"
+        "aa931c9c-13b3-4a1b-9d85-791755a45c1b"
       ],
       "pending": [],
       "skipped": [],
-      "duration": 305,
+      "duration": 500,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
